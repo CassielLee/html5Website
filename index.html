@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CL_Practice</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/content.css">
+  <link rel="stylesheet" href="./css/mask.css">
+  <script type="text/javascript" src="js/Interaction.js"></script>
+</head>
+<body>
+  <!--项目主体部分并不会变，随着视口改变的是两边的留白，和bootstrap很相似-->
+  <!--section整体的包裹器，充当视口-->
+ <section id="wrap">
+   <!--开机动画的遮罩层-->
+   <div id="mask">
+     <div class="up"></div>
+     <div class="down"></div>
+     <span class="line"></span>
+   </div>
+   <!--流体布局-->
+   <header id="head">
+     <!--固定区域-->
+     <div class="headMain">
+       <!--一般网站的logo都放在h1标签中-->
+       <h1 class="logo">
+         <a href="javascript:;">
+           <img src="./img/logo.png" alt="logo"/>
+         </a>
+       </h1>
+       <nav>
+         <ul class="list clearfix">
+           <li>
+             <a href="javascript:;">
+               <div class="up"><img src="./img/home_gruen.png" alt="home"></div>
+               <div class="down"><img src="./img/home.png" alt="home"></div>
+             </a>
+           </li>
+           <li>
+             <a href="javascript:;">
+               <div class="up">Course</div>
+               <div class="down">Course</div>
+             </a>
+           </li>
+           <li>
+             <a href="javascript:;">
+               <div class="up">Works</div>
+               <div class="down">Works</div>
+             </a>
+           </li>
+           <li>
+             <a href="javascript:;">
+               <div class="up">About</div>
+               <div class="down">About</div>
+             </a>
+           </li>
+           <li>
+             <a href="javascript:;">
+               <div class="up">Team</div>
+               <div class="down">Team</div>
+             </a>
+           </li>
+         </ul>
+       </nav>
+       <div class="arrow"></div>
+       <div class="player">
+         <audio src="audio/bgm.mp3" loop ></audio>
+       </div>
+
+     </div>
+   </header>
+   <section id="content">
+     <ul class="list">
+       <!--第1屏-->
+       <li class="home">
+         <section>
+           <!--存放图片的列表-->
+           <ul class="home1 ">
+             <li class="commonTitle active"><div class="item">one layer</div></li>
+             <li class="commonTitle "><div class="item">two layer</div></li>
+             <li class="commonTitle"><div class="item">three layer</div></li>
+             <li class="commonTitle"><div class="item">four layer</div></li>
+           </ul>
+           <!--存放小圆点列表-->
+           <ul class="home2">
+             <li class="active"></li>
+             <li></li>
+             <li></li>
+             <li></li>
+           </ul>
+         </section>
+       </li>
+       <!--第2屏-->
+       <li class="course">
+         <section>
+           <header class="course1 commonTitle">
+            <span>EINIGE</span> <br/>
+            <span>UNSERER</span> <br/>
+            <span>KUNDEN</span> <br/>
+           </header>
+           <div class="course2 commonText">
+             <p>
+               Das Kundenvertrauen in unsere Kompetenz ist die notwendige Basis einer erfolgreichen Zusammenarbeit, gleichzeitig aber auch das größte Lob, das man uns entgegenbringen kann.
+               <br/>
+               Diese und viele weitere große und kleine Kunden vertrauen uns seit Jahren, was uns stolz macht, und dafür sagen wir an dieser Stelle einfach mal.
+             </p>
+           </div>
+           <div class="course3">
+             <span class="line"></span>
+             <span class="line"></span>
+             <span class="line"></span>
+             <span class="line"></span>
+             <span class="line"></span>
+             <div class="item">
+               <div class="back"></div>
+               <div class="face">如若相爱，便携手到老;如若错过，便护他安好。</div>
+             </div>
+             <div class="item">
+               <div class="back"></div>
+               <div class="face">Your happy passer-by all knows, my distressed there is no place hides.</div>
+             </div>
+             <div class="item">
+               <div class="back"></div>
+               <div class="face">你走，我不送你。你来，无论多大风多大雨，我要去接你。</div>
+             </div>
+             <div class="item">
+               <div class="back"></div>
+               <div class="face">The hard part isn’t making the decision. It’s living with it.。</div>
+             </div>
+             <div class="item">
+               <div class="back"></div>
+               <div class="face">繁华如三千东流水， 我只取一瓢，爱了解。</div>
+             </div>
+             <div class="item">
+               <div class="back"></div>
+               <div class="face">Happiness is a way station between too much and too little.</div>
+             </div>
+             <div class="item">
+               <div class="back"></div>
+               <div class="face">一个笑就击败了一辈子，一滴泪就还清了一个人。</div>
+             </div>
+             <div class="item">
+               <div class="back"></div>
+               <div class="face">You may be out of my sight, but never out of my mind.</div>
+             </div>
+             <div class="item">
+               <div class="back"></div>
+               <div class="face">你的过去我来不及参与，你的未来我奉陪到底。</div>
+             </div>
+             <div class="item">
+               <div class="back"></div>
+               <div class="face">Love is not a maybe thing. You know when you love someone.</div>
+             </div>
+             <div class="item">
+               <div class="back"></div>
+               <div class="face">我明白你会来，所以我等。</div>
+             </div>
+             <div class="item">
+               <div class="back"></div>
+               <div class="face">Whatever is worth doing is worth doing well.</div>
+             </div>
+           </div>
+           <!--出入场动画效果中的飞机-->
+           <div class="plane1"></div>
+           <div class="plane2"></div>
+           <div class="plane3"></div>
+         </section>
+       </li>
+       <!--第3屏-->
+       <li class="works">
+         <section>
+           <header class="works1 commonTitle">
+             <span>EINBLICK</span><br/>
+             <span>ERKENNTNIS</span><br/>
+             <span>ERGEBNIS</span><br/>
+           </header>
+           <div class="works2">
+             <div class="item">
+               <img src="./img/worksimg1.jpg" alt="works">
+               <div class="mask">
+                 <span>一大大二大大</span>
+                 <div class="icon"></div>
+               </div>
+             </div>
+             <div class="item">
+               <img src="./img/worksimg2.jpg" alt="works">
+               <div class="mask">
+                 <span>三大打四大大</span>
+                 <div class="icon"></div>
+               </div>
+             </div>
+             <div class="item">
+               <img src="./img/worksimg3.jpg" alt="works">
+               <div class="mask">
+                 <span>五大大六大大</span>
+                 <div class="icon"></div>
+               </div>
+             </div>
+             <div class="item">
+               <img src="./img/worksimg4.jpg" alt="works">
+               <div class="mask">
+                 <span>七大大八大大</span>
+                 <div class="icon"></div>
+               </div>
+             </div>
+           </div>
+           <div class="works3"></div>
+           <div class="pencel1"></div>
+           <div class="pencel2"></div>
+           <div class="pencel3"></div>
+         </section>
+       </li>
+       <!--第4屏-->
+       <li class="about">
+         <section>
+           <header class="about1 commonTitle">
+             <span>DIE</span><br/>
+             <span>SPEZIELLE</span><br/>
+             <span>VIELFALT</span><br/>
+           </header>
+           <div class="about2">
+             <p class="commonText">Der bunte Medienmix ist die Faszination die uns antreibt und das, was man an uns schätzt. Von A bis Z und von vorne bis hinten nehmen wir Ihr Projekt unter unsere Fittiche und lassen es zu etwas Großartigem heranwachsen.</p>
+           </div>
+           <div class="about3">
+             <div class="item">
+               <span></span>
+               <ul data-src="img/about1.jpg"></ul>
+             </div>
+             <div class="item">
+               <span></span>
+               <ul data-src="img/about3.jpg"></ul>
+             </div>
+             <div class="about4"></div>
+           </div>
+         </section>
+       </li>
+       <!--第5屏-->
+       <li class="team">
+         <section>
+           <header class="team1 commonTitle">
+             <span>WIR SIND</span><br/>
+             <span>VOXELAIR</span><br/>
+           </header>
+           <div class="team2">
+             <p class="commonText">Wir sind seit 2002 eine Full-Service-Werbeagentur mit Stammsitz in Heimsheim, zwischen Stuttgart und Karlsruhe. </p>
+             <p class="commonText">Über 60 Jahre Erfahrung vereinen das gesamte VoxelAir-Team. Dabei hat jedes Voxel neben professionellem Allroundwissen auch sein ganz spezielles Gebiet, um selbst die individuellsten Kundenwünsche schnell und kompetent umzusetzen.</p>
+           </div>
+           <div class="team3">
+             <ul>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+             </ul>
+           </div>
+         </section>
+       </li>
+     </ul>
+     <ul class="listNav">
+       <li class="active"></li>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+     </ul>
+   </section>
+ </section>
+</body>
+</html>
